@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ISS info</title>
+	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/ISS_insignia.svg/800px-ISS_insignia.svg.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="iss.js"></script>
+</head>
+<body>
+	<!-- We use a minimum of code in html, all the work to make JS file -->
+	<div class="container">
+		<div class="row head">
+			<div class="col-8" id="location">
+			</div>
+			<div class="col-4" id="time">
+			</div>
+		</div>
+		<div class="row body">
+			<div class="col-8" id="map">
+			</div>
+			<div class="col-4" id="people">
+			</div>
+		</div>
+	</div>
+	<script asunc defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUzhR5dgElFG3sXbXa9W2EsvHxuamNggU">
+	</script>
+	<!-- My signature -->
+	<p align="center">Coded by <i><a href="https://github.com/f0lin3r" style="color:red" target='_blank'>f0lin3r</a></i></p>
+</body>
+</html>
