@@ -34,11 +34,12 @@ function ready(){
 			$('#people').html('<p class="peopleTotal">Now on ISS: '+data.number+' astronauts</p>');
 			//show the user of all astronauts on the ISS
 			for(var i=0;i<data.number;i++){
-				//"new name" to search on the wiki
+				if(data.people[i].craft == "ISS"){
+					//"new name" to search on the wiki
 				var newname = data.people[i].name.replace(/ /g,'_');
 				$("#people").append('<p class="cell"><img height="64" src="http://icons.iconarchive.com/icons/martin-berube/people/256/astronaut-icon.png"><a href="https://en.wikipedia.org/wiki/'+newname+'" target="_blank">'+data.people[i].name+'</p>');
+				}
 			}
-
 		}
 	});
 	//update the data every 5 seconds
